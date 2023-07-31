@@ -83,6 +83,7 @@ body{
 	position: relative;
 	font-weight: normal;
 	background-color: #E3E4E6;
+	overflow-x: hidden;
 }
 a{
 	color: #080808;
@@ -133,8 +134,7 @@ h6 {
 h1, h2, h3, h4, h5, h6 {
 	font-weight: bold;	
 	font-family: 'Manrope', sans-serif;
-	padding: 5px 0 15px 0;	
-	margin: 0;	
+	padding: 5px 0 0px 0;	
 	color: #080808;
 }
 
@@ -258,20 +258,9 @@ div.show-grid [class*="span"] {
 	margin:50px 0 40px 0;
 	width: auto;
 }
-.titles span{
-	background-color: #1e1e1e;
-	color: #fff;
-	font-weight: bold;
-	font-size: 16px;
-	line-height: 30px;
-	padding: 6px 20px 6px 10px;
-	display: inline;
-}
 .titles h1{
-	margin: 20px 0;
-	border-bottom: 8px solid #0581b5;
-	padding-bottom: 7px;	
-	font-size: 30px;
+	margin: 0px 0;
+	font-size: 45px;
 	line-height: 40px;
 	display: inline;
 }
@@ -511,12 +500,6 @@ html ul.tabs li.active a{
 	outline:none;
 }
 
-/* Forms ---------------------------------------------------------*/
-
- input{
- 	width: 90%;
- }
-
 /* ---------------------------------------------------------------------- */
 /*	03 Structure
 /* ---------------------------------------------------------------------- */
@@ -741,22 +724,14 @@ nav{
 /* Content Info ----------------------------*/
 
 .content_info{	
-	margin-top: -140px;
 	max-width: 1110px;	
 	position: relative;
-	padding: 90px 30px 50px 30px;	
-	-webkit-box-shadow: 0 1px 10px rgba(0,0,0,0.15);
-	-moz-box-shadow: 0 1px 10px rgba(0,0,0,0.15);
-	box-shadow: 0 1px 10px rgba(0,0,0,0.15);
-	border: 1px solid #c4c4c4;
-	background: #fff;
-	border-radius: 15px;
+	padding: 0px 30px 50px 30px;	
 	z-index: 1;
 }
 .full_info{
 	padding: 50px 0;
-	border-top: 1px solid #cacaca;	
-	background: #fff;
+	background: #F2F8FA;
 }
 .sections .tabs_services{
 	margin: 50px auto 0 auto;
@@ -773,6 +748,10 @@ nav{
 	line-height: 75px;
 	color: #fff;	
 	text-align: center;
+}
+
+.section_title .subtitle p {
+	color: rgb(235, 235, 235);
 }
 
 .section_title .container{
@@ -838,7 +817,6 @@ nav{
 	top: 12px;
 }
 .about{
-	width: 100%;
 	height: 100vh;
 	background: url("./assets/about/bigHousee.png");
 	background-repeat: no-repeat;
@@ -860,7 +838,7 @@ nav{
 }
 .sponsors{
 	width: 100%;
-	padding: 120px 0;
+	padding: 60px 0;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -871,56 +849,45 @@ nav{
 /* newsletter_box ----------------------------*/
 
 .newsletter_box{
-	background-color: #f6f6f6;
-	background: url("../img/arrow_top.png") no-repeat top right 10%;
-	border-bottom: solid 1px #ddd;	
+	background-color: #0581b5;
 	padding: 20px 30px;
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 96%;
-	max-width: 1110px;
+	width: 100%;
+	height: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
 }
 .newsletter_box h3{		
 	margin: auto;
-	padding: 10px 0;	
 	line-height: 34px;
-	font-size: 26px;
-	color: #333;
+	font-size: 56px;
+	color: #ffffff;
 	font-weight: normal;
-	font-family: 'Manrope', sans-serif
+	font-family: 'Manrope', sans-serif;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	justify-content: start;
+	gap: 25px;
 }
 .newsletter_box h3 span{
-	color: #1c1b1b;
+	color: #dfdddd;
 	font-weight: normal;
 	font-family: 'Open Sans', sans-serif;
 	font-style: italic;
-	font-size: 16px;
-	padding-left: 10px;
-}
-.newsletter_box form{
-	margin: 0;
-	padding: 0;
+	font-size: 22px;
 }
 .newsletter_box input{
-	height: 28px;
-	margin-top: 12px;
-	padding: 0 5px;
-	width: 70%;
-	float: right;
-}
-.newsletter_box form{
-	position: relative;
+	height: 38px;
+	padding: 0 15px;
 }
 .newsletter_box .register{
-	background: none;
+	background: #1e1e1e;
 	border: 0;
-	color: #1e1e1e;
-	margin: 0;
-	padding: 0;	
-	position: absolute;
-	right: 10px;
-	top: 17px;
+	color: white;
+	width: 35px;
+	height: 40px;
 }
 .newsletter_box .register i{
 	font-size: 20px;	
@@ -957,6 +924,24 @@ nav{
 }
 .bar_properties .active{
 	background: #4e4e4e;
+}
+
+/*ad*/
+
+.postts {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.postt {
+	width: 320px;
+	background-color: white;
+	border-radius: 15px;
+	padding: 10px 10px;
+}
+
+.postt img {
+	border-radius: 15px;
 }
 
 /* Propertys ----------------------------*/
@@ -1322,12 +1307,7 @@ nav{
 
 
 
-.service-process{
-	background-image:url('../img/service-bg.png');
-	background-repeat:no-repeat;
-	background-size:100% auto;
-	background-position:top center;	
-}
+
 .service-process a{
 	color: #5c5c5c;
 }
@@ -1461,23 +1441,27 @@ to{
 /* Footer top ----------------------------*/
 
 footer a{
-	color: #f4f4f4;
+	color: #000000;
+}
+
+.tags a {
+	color: white;
 }
 footer a:hover{
-	color: #f4f4f4;
+	color: #686868;
 }
 footer h3{
-	color: #fff;
+	color: #000000;
 	padding-top: 0;
 }
 .footer_top {
-	background-color: #2d2d2e;
+	background-color: #E3E4E6;
 	border-top: #ccc;
 	border-top: 6px solid rgba(0, 0, 0, 0.4);
 
 }
 .footer_top h1{
-	color: #fff;
+	color: #000000;
 	font-size: 50px;
 	line-height: 60px;
 	margin-bottom: 10px;
@@ -1499,9 +1483,8 @@ footer h3{
 /* Footer Medium ----------------------------*/
 
 .footer_medium {
-	background-color: #1e1e1e;
+	background-color: #E3E4E6;
 	border-top: 5px solid #0581b5;
-	background: #1e1e1e url("../img/arrow_footer.png")no-repeat top center;
 }
 .footer_medium .testimonials{
 	background: #494949;
@@ -1520,7 +1503,7 @@ footer h3{
 	left: 10%;
 }
 .testimonial_autor{
-	color: #f4f4f4;
+	color: #000000;
 	padding: 20px 0 0 0;
 	font-style: italic;
 	text-align: right;	
@@ -1554,13 +1537,13 @@ footer h3{
 	padding: 50px 0;
 }
 .footer_down {
-	background-color: #494949;
+	background-color: #E3E4E6;
 	padding: 15px 0;
 }
 .footer_down p{
 	margin: 0;
 	padding: 0;
-	color: #fff;
+	color: #000000;
 	padding-top: 5px;
 }
 /* Contact Footer -------------------------------------------*/
@@ -1571,11 +1554,11 @@ ul.contact_footer{
 ul.contact_footer li{
 	margin:0 0 10px 0;
 	list-style: none;
-	color: #fff;
+	color: #000000;
 	font-weight: bold;
 }
 ul.contact_footer li a{	
-	color: #fff;	
+	color: #000000;	
 	padding-left: 10px;
 	font-weight: normal;
 }
@@ -1941,8 +1924,8 @@ form{
 }
 .image_post{
 	position: relative;
-	border:3px solid #0581b5;
 	overflow: hidden;
+	border-radius: 10px;
 }
 .image_post ul{
 	margin: 0;
@@ -2238,7 +2221,7 @@ aside .check li i{
 	}
 
 	.content_info{
-		padding:175px 3% 40px 3%;
+		padding:0px 3% 40px 3%;
 		width: 80%;
 		z-index: 99;
 	}
@@ -2293,11 +2276,9 @@ aside .check li i{
 		padding: 20px 20px 10px 20px;			
 	}
 	.section_title h1{
-		font-size: 25px;	
-		line-height: 35px;		
-	}
-	.section_title span{
-		font-size: 13px;		
+		font-size: 50px;	
+		line-height: 50px;
+		text-align: start;		
 	}
 	.section_title input{
 		height: 28px;
@@ -2366,12 +2347,36 @@ aside .check li i{
 		margin-bottom: 40px;
 	}
 	.titles h1{
-		font-size: 30px;
+		font-size: 40px;
 		line-height: 40px;
 	}
 	.item_property_h .info_property_h p{
 		font-size: 12px;
 		line-height: 22px;
+	}
+
+    .section_title .container-clients {
+		display: flex;
+		justify-content: center; 
+		align-items: center;
+		gap: 35px;
+	}
+
+	.section_title .number {
+		font-size: 25px;
+		font-weight: 900;
+		color: white;
+	}
+	
+	.section_title span {
+		font-weight: 800;
+		color: #0581b5;
+	}
+	
+	.section_title p {
+		font-size: 15px;
+		line-height: 32px;
+		color: white;
 	}
 }
 
@@ -2409,7 +2414,12 @@ aside .check li i{
 @media handheld, only screen and (max-width: 380px) {
 	.tinynav {		
 		margin-top: -32px;
-	} 
+	}
+	.section_title h1{
+		font-size: 50px;	
+		line-height: 45px;
+		text-align: start;		
+	}
 	.item_service p{
 		font-size: 13px;
 		line-height: 20px;
