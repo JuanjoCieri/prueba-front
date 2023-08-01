@@ -126,4 +126,21 @@ $(document).ready(function(){
 
 });
 
+//============================== Change navbar color on scroll ====================================//
     
+$(document).ready(function() {
+	function checkScroll() {
+	  var scrollPosition = $(window).scrollTop();
+	  var nav = $('nav');
+  
+	  if (scrollPosition > 50) {
+		nav.addClass('transparent-scroll');
+	  } else {
+		nav.removeClass('transparent-scroll');
+	  }
+	}
+  
+	checkScroll();
+	$(window).scroll(checkScroll);
+  });
+  
