@@ -731,7 +731,6 @@ nav{
 }
 .full_info{
 	padding: 50px 0;
-	background: #F2F8FA;
 }
 .sections .tabs_services{
 	margin: 50px auto 0 auto;
@@ -2129,7 +2128,7 @@ aside .check li i{
 /* ---------------------------------------------------------------------- */
 
 @media handheld, only screen and (max-width: 800px) {
-	
+
 	.sf-menu > li{
 		margin:0 10px;	
 	}		
